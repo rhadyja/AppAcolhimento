@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:background="@drawable/logocentromaior"
+    tools:context=".PrimeirosSocorros">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Primeiros Socorros"
+        android:textSize="30dp"
+        android:background="#D8CD0C0C"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:text="Em caso de afogamento, primeiramente contate os Bombeiros (193) ou o Samu (192).\nCaso a pessoa não esteja respirando, deite-a em uma superfície firme com a barriga para cima e siga os passos a seguir:\n 1- Posicione suas mãos sobre o peito da vítima, entrelaçando os dedos e mantendo os braços esticados \n 2- Empurre as mãos com força contra o peito, entre os mamilos, utilizando o peso do próprio corpo e fazendo 2 compressões por segundo, até que a vítima se recupere ou até a chegada do socorro. Deixe que o tórax da pessoa volte à posição normal entre cada compressão\n OBS: Esta indicação não substitui treinamento em massagem cardíaca ou atendimento profissional."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#16550B"
+        android:text="Voltar"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Fonte: https://www.tuasaude.com/o-que-fazer-em-caso-de-afogamento/#:~:text=Posicionar%20as%20m%C3%A3os%20sobre%20o,at%C3%A9%20a%20chegada%20do%20socorro.-->
+
+</LinearLayout>
